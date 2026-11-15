@@ -1,0 +1,16 @@
+A = int(input("Порядковое число дня недели:"))
+
+if A == 1:
+    print("Понедельник")
+elif A == 2:
+    print("Вторник")
+elif A == 3:
+    print("Среда")
+elif A == 4:
+    print("Четверг")
+elif A == 5:
+    print("Пятница")
+elif A == 6:
+    print("Суббота")
+elif A == 7:
+    print("Воскресенье")

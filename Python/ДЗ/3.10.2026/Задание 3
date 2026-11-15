@@ -1,0 +1,8 @@
+N = int(input("Число:"))
+
+if N > 0:
+    print("Number is positive")
+elif N < 0:
+    print("Number is negative")
+else:
+    print("Number is equal to zero")

@@ -1,0 +1,26 @@
+A = int(input("Порядковое число месяца:"))
+
+if A == 1:
+    print("Январь")
+elif A == 2:
+    print("Февраль")
+elif A == 3:
+    print("Март")
+elif A == 4:
+    print("Апрель")
+elif A == 5:
+    print("Май")
+elif A == 6:
+    print("Июнь")
+elif A == 7:
+    print("Июль")
+elif A == 8:
+    print("Август")
+elif A == 9:
+    print("Сентябрь")
+elif A == 10:
+    print("Октябрь")
+elif A == 11:
+    print("Ноябрь")
+elif A == 12:
+    print("Декабрь")
