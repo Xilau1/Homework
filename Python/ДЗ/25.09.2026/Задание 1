@@ -1,0 +1,12 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+N3 = int(input("Число:"))
+
+print("1. Сумма")
+print("2. Произведение")
+N = int(input("Число:"))
+
+if N == 1:
+    print(f"Сумма: {N1 + N2 + N3}")
+elif N == 2:
+    print(f"Произведение: {N1 - N2 - N3}")

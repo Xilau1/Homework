@@ -1,0 +1,16 @@
+M = int(input("Количество метров:"))
+
+print("1. Перевод в мили")
+print("2. Перевод в дюймы")
+print("3. Перевод в ярды")
+N = int(input("Число:"))
+
+if N == 1:
+    miles = M / 1609.344
+    print(f"Мили: {miles}")
+elif N == 2:
+    inches = M / 0.0254
+    print(f"Дюймы: {inches}")
+elif N == 3:
+    yards = M / 1.09361
+    print(f"Ярды: {yards}")
