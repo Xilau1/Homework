@@ -1,0 +1,5 @@
+salary = int(input("Зарплата за месяц: "))
+creditt = int(input("Месячный платеж по кредиту в банке: "))
+communalka = int(input("Задолженность за коммунальные услуги: "))
+
+print(f"Остаток: {salary - creditt - communalka}")

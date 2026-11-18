@@ -1,0 +1,9 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+
+if N1 == N2:
+    print("Числа равны")
+elif N1 > N2:
+    print(f"{N2}, {N1}")
+else:
+    print(f"{N1}, {N2}")

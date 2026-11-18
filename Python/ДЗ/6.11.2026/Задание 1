@@ -1,0 +1,23 @@
+nums = [1, 44, 9, 9, 7, -9, -4, -8, -31, 3, 0, 36, 5]
+trips = 0
+odds = 0
+even = 0
+negative = 0
+minind = nums.index(min(nums))
+maxind = nums.index(max(nums))
+
+for i in nums:
+   if i < 0:
+      negative += 1
+
+for i in nums:
+   if i % 2 == 0:
+      even += 1
+   else:
+      odds += 1
+
+for i in nums:
+   if i % 3 == 0:
+      trips += 1
+
+print(f"Произведение элементов между минимальным и максимальным элементом: {sum(minind, maxind)}")
