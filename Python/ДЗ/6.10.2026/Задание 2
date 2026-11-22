@@ -1,0 +1,25 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+
+summa5 = 0
+
+print("Числа")
+for i in range(N1, N2 + 1):
+    print(i)
+
+print("Числа в обратном порядке")
+for i in reversed(range(N1, N2 + 1)):
+    print(i)
+
+print("Числа кратные 7")
+for i in range(N1, N2 + 1):
+    if i % 7 == 0:
+        print(i)
+
+print("Количество чисел кратных 5")
+
+for i in range(N1, N2 + 1):
+    if i % 5 == 0:
+        summa5 += 1
+
+print(summa5)

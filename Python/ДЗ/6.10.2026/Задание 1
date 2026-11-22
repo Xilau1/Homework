@@ -1,0 +1,6 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+
+for i in range(N1, N2 + 1):
+    if i % 7 == 0:
+        print(i)
