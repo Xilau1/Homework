@@ -1,0 +1,6 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+if N1 == N2:
+    print("Числа равны")
+else:
+    print(f"Наибольшее число: {max(N1, N2)}")

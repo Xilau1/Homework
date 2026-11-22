@@ -1,0 +1,14 @@
+N1 = int(input("Ваш возраст:"))
+N2 = int(input("День недели:"))
+
+discount = 0.0
+
+if N1 < 12:
+  discount += 0.50
+elif N1 >= 65:
+  discount += 0.30
+
+if N2 == 6 or N2 == 7:
+  discount -= 0.20
+
+print(f"Итоговая цена: {500 * (1 - discount)}")

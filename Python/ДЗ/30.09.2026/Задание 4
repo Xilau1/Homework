@@ -1,0 +1,10 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+N3 = int(input("Число:"))
+
+if N2 < N1 > N3:
+    print(f"Наибольшее число: {N1}")
+elif N1 < N2 > N3:
+    print(f"Наибольшее число: {N2}")
+elif N2 < N3 > N1:
+    print(f"Наибольшее число: {N3}")

@@ -1,0 +1,12 @@
+grade = int(input("Баллы:"))
+
+if grade >= 90 and grade <= 100:
+    print("Отлично")
+elif grade >= 75 and grade <= 89:
+    print("Хорошо")
+elif grade >= 60 and grade <= 74:
+    print("Удовлетворительно")
+elif grade >= 0 and grade <= 59:
+    print("Неудовлетворительно")
+else:
+    print("Число вне диапазона")

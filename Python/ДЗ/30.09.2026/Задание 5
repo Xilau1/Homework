@@ -1,0 +1,17 @@
+N1 = int(input("Число:"))
+N2 = int(input("Число:"))
+op = input("Операция (+,-,*,/):")
+
+if op == "+":
+    print(f"Результат: {N1 + N2}")
+elif op == "-":
+    print(f"Результат: {N1 - N2}")
+elif op == "*":
+    print(f"Результат: {N1 * N2}")
+elif op == "/":
+    if N2 == 0 or N1 == 0:
+        print("Ошибка")
+    else:
+        print(f"Результат: {N1 / N2}")
+else:
+    print("Ошибка")
