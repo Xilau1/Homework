@@ -1,0 +1,64 @@
+import random
+
+print("Выберите уровень сложности")
+print("1. легко")
+print("2. терпимо")
+print("3. сложно")
+N = int(input("Уровень сложности:"))
+print()
+
+if N == 1:
+    score = 0
+    for i in range(5):
+        N1 = random.randint(1, 9)
+        N2 = random.randint(1, 9)
+        print(f"{N1} * {N2} = ?")
+        answer = int(input("Ответ:"))
+        print()
+        if answer == (N1 * N2):
+            score += 1
+    if score < 3:
+        print("Ваша оценка 2.")
+    elif score == 3:
+        print("Ваша оценка 3.")
+    elif score == 4:
+        print("Ваша оценка 4.")
+    elif score == 5:
+        print("Ваша оценка 5.")
+elif N == 2:
+    score = 0
+    for i in range(10):
+        N1 = random.randint(10, 99)
+        N2 = random.randint(10, 99)
+        print(f"{N1} * {N2} = ?")
+        answer = int(input("Ответ:"))
+        print()
+        if answer == (N1 * N2):
+            score += 1
+    if score <= 3:
+        print("Ваша оценка 2.")
+    elif score <= 6:
+        print("Ваша оценка 3.")
+    elif score <= 9:
+        print("Ваша оценка 4.")
+    elif score == 10:
+        print("Ваша оценка 5.")
+elif N == 3:
+    score = 0
+    for i in range(15):
+        N1 = random.randint(100, 999)
+        N2 = random.randint(100, 999)
+        print(f"{N1} * {N2} = ?")
+        answer = int(input("Ответ:"))
+        print()
+        if answer == (N1 * N2):
+            score += 1
+    if score <= 4:
+        print("Ваша оценка 2.")
+    elif score <= 9:
+        print("Ваша оценка 3.")
+    elif score <= 14:
+        print("Ваша оценка 4.")
+    elif score == 15:
+        print("Ваша оценка 5.")
+

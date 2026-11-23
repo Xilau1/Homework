@@ -1,0 +1,4 @@
+N = int(input("Размер квадрата:"))
+
+for i in range(N):
+    print("*" * N)

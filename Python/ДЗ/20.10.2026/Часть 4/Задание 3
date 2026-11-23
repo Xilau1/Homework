@@ -1,0 +1,6 @@
+N = int(input("Размер квадрата:"))
+
+print("*" * N)
+for i in range(N - 2):
+    print("*" + " " * (N - 2) + "*")
+print("*" * N)

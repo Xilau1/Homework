@@ -1,0 +1,14 @@
+N = int(input("Число:"))
+digits = []
+
+for i in str((N)):
+    digits.append(int(i))
+
+count = len(digits)
+summa = sum(digits)
+arithmetic = summa / count
+
+print(f"Количество цифр: {count}")
+print(f"Сумма цифр: {summa}")
+print(f"Среднее арифметическое: {arithmetic}")
+print(f"Количество нулей: {digits.count(0)}")

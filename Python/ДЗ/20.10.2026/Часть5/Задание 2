@@ -1,0 +1,7 @@
+N = int(input("Размер клетки:"))
+
+for i in range(4):
+    for i in range(N):
+        print(f"{"*" * N}{"_" * N}{"*" * N}{"_" * N}{"*" * N}{"_" * N}{"*" * N}{"_" * N}")
+    for i in range(N):
+        print(f"{"_" * N}{"*" * N}{"_" * N}{"*" * N}{"_" * N}{"*" * N}{"_" * N}{"*" * N}")
