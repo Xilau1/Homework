@@ -1,0 +1,52 @@
+import random
+
+nums = [random.randint(-10, 100) for i in range(10)]
+
+summanegative = 0
+summaeven = 0
+summaneeven = 0
+proizthree = 0
+proizminmax = 0
+summalastfirst = 0
+
+for i in nums:
+    if i < 0:
+        summanegative += i
+
+for i in nums:
+    if i % 2 == 0:
+        summaeven += i
+
+for i in nums:
+    if i % 2 != 0:
+        summaneeven += i
+
+for i in nums:
+    if i % 3 == 0:
+        if proizthree == 0:
+            proizthree += i
+        else:
+            proizthree *= i
+
+minnum = nums.index(min(nums))
+maxnum = nums.index(max(nums))
+
+leftind = min(minnum, maxnum) + 1
+rightind = max(minnum, maxnum)
+
+for i in nums[leftind:rightind]:
+    if proizminmax == 0:
+        proizminmax += i
+    else:
+        proizminmax *= i
+
+for i in nums[nums[0]:nums[-1]]:
+    summalastfirst += i
+
+
+print(f"Сумма отрицательных чисел: {summanegative}")
+print(f"Сумма четных чисел: {summaeven}")
+print(f"Сумма нечетных чисел: {summaneeven}")
+print(f"Произведение чисел кратных 3: {proizthree}")
+print(f"Произведение элементов между максимальным и минимальным элементами: {proizminmax}")
+print(f"Сумма чисел между первым и последним элементами: {summalastfirst}")

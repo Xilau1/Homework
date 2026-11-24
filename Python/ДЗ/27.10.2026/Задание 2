@@ -1,0 +1,31 @@
+import random
+
+nums = [random.randint(-100, 100) for i in range(22)]
+
+evennums = []
+odddnums = []
+negativenums = []
+plusnums = []
+
+for i in nums:
+    if i % 2 == 0:
+        evennums.append(i)
+
+for i in nums:
+    if i % 2 != 0:
+        odddnums.append(i)
+
+for i in nums:
+    if i < 0:
+        negativenums.append(i)
+
+for i in nums:
+    if i > 0:
+        plusnums.append(i)
+
+print(f"Четные: {evennums}")
+print(f"Нечетные: {odddnums}")
+print(f"Отрицательные: {negativenums}")
+print(f"Положительные: {plusnums}")
+
+
