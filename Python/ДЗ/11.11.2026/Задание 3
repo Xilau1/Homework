@@ -1,0 +1,6 @@
+txt = input("Ваш текст:")
+
+txt1 = txt.replace("!", ".").replace("?", ".")
+sntns = [i for i in txt1.split(".") if i.strip()]
+
+print(f"Количество предложений: {len(sntns)}")

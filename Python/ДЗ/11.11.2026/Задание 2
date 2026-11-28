@@ -1,0 +1,17 @@
+txt1 = input("Ваш текст: ")
+print("")
+N1 = input("Введите список зарезервированных слов: ")
+print("")
+
+txtwords = N1.split(", ")
+words = txt1.split()
+result = []
+
+for i in words:
+    wordd = i.strip(".,!?;:").lower()
+    if wordd in txtwords:
+        result.append(i.upper())
+    else:
+        result.append(i)
+
+print(" ".join(result))

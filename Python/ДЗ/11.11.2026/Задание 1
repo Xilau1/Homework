@@ -1,0 +1,8 @@
+txt1 = input("Строка:")
+
+txt2 = "".join(char.lower() for char in txt1 if char.isalnum())
+
+if txt1 == txt2[::-1]:
+    print("Это палиндром")
+else:
+    print("Это не палиндром")
