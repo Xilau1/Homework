@@ -1,0 +1,21 @@
+days = [
+    "Понедельник",
+    "Вторник",
+    "Среда",
+    "Четверг",
+    "Пятница",
+    "Суббота",
+    "Воскресенье",
+]
+
+try:
+    N = int(input("День недели:"))
+    if N < 1 or N > 7:
+        raise IndexError
+    print(days[N - 1])
+except ValueError:
+        print("Введите номер дня")
+except IndexError:
+        print("Нет такого дня")
+finally:
+        print("Проверка завершена")

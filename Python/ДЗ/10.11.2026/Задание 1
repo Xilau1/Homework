@@ -1,0 +1,7 @@
+try:
+    while True:
+        N = int(input("Число:"))
+        print(f"Квадрат числа: {N * N}")
+        print("")
+except ValueError:
+    print("Введите целое число")

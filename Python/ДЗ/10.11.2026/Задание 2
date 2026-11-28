@@ -1,0 +1,10 @@
+try:
+    N1 = int(input("Число:"))
+    N2 = int(input("Число:"))
+    print("")
+    print(f"Частное чисел: {N1 // N2}")
+except ValueError:
+    print("Нужно ввести два целых числа")
+except ZeroDivisionError:
+    print("На ноль делить нельзя")
+
